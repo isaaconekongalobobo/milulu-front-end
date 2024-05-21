@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <!-- Je crée une div dans lequel je vais generer l`en tete de la page grace au javascripts -->
+  <div id="block-entete"></div>
+  <body class="light ">
+    <!-- Je crée la div principale qui serviraa a changer de contenue en fonction de chaque page -->
+    <div id="bloc-mere">
+      <div class="wrapper vh-100">
+        <div class="row align-items-center h-100">
+          <!-- Formulaire de connexion -->
+          <form class="col-lg-3 col-md-4 col-10 mx-auto text-center" action="traitement1" method="post" id="form-connexion">
+            <!-- Icone de la page de connexion -->
+            <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
+                <g>
+                  <img src="logo.png" width="100" height="40" style="background-color: #fff;border-radius: 5px;padding: auto;right: 30%;" id="icone-page-connexion">
+                </g>
+            </a>
+            <h1 class="h6 mb-3 texte">Se connecter</h1>
+            <div class="form-group">
+              <label for="numero" class="sr-only">Numero mobile</label>
+              <input type="text" id="numero" name="numero" class="form-control form-control-lg" placeholder="Numero mobile" required autofocus minlength="8">
+            </div>
+            <div class="form-group">
+              <label for="mdp" class="sr-only">Mot de passe</label>
+              <input type="password" id="mdp" name="mdp" class="form-control form-control-lg" placeholder="Mot de passe" required="">
+            </div>
+            <div class="checkbox mb-3">
+                <input type="checkbox" value="oui" name="fournisseur" id="checkbox-compte">Se connecter en tant que fournisseur</label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="suivant">Se connecter</button>
+            <p class="mt-5 mb-3 text-muted"><a href="type-de-compte" class="texte" id="lien-nouveau-compte">Vous n'avez pas un compte ?</a></p>
+          </form>
+        </div>
+      </div>      
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.min.js"></script>
+    <script src='js/daterangepicker.js'></script>
+    <script src='js/jquery.stickOnScroll.js'></script>
+    <script src="js/tinycolor-min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/apps.js"></script>
+    <!-- Scripts pour gerer le front-end de cette page -->
+    <script src="fonctions-js/fonctions-front.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56159088-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag()
+      {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-56159088-1');
+    </script>
+  </body>
+</html>
+</body>
+</html>

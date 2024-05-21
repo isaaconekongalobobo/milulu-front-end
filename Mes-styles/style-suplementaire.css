@@ -1,0 +1,105 @@
+body{
+    background-color:#702d53 ;
+}
+.para{
+    color: #702d53 ;
+}
+.texte{
+    color: #ffffff;
+}
+.back{
+
+    background-color: #fff;
+    border-radius: 5px;
+}
+.bouton{
+    background-color: #702d53;
+    border: 2px solid #702d53;
+}
+.lien{
+    text-decoration: none;
+    color: #702d53;
+}
+/* Formulaire de connexion */
+#form-connexion {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+/* Champ du formulaire de connexion*/
+#form-connexion input {
+    font-size: medium;
+    color: #702d53;
+    border: 2px solid #702d53;
+    opacity: 90%;
+    border-radius :30px;
+}
+/* bouton du formulaire de connexion */
+#form-connexion button {
+    font-size: medium;
+    background-color: #ffffff;
+    border: 2px solid #702d53;
+    color: #702d53;
+    opacity: 90%;
+    border-radius :30px;
+}
+/* bouton du formulaire de connexion au survol*/
+#form-connexion button:hover {
+    border: 2px solid #702d53;
+    background-color: #702d53;
+    color: #ffffff;
+    opacity: 90%;
+}
+/* Checkbox pour choisir le type de compte */
+#checkbox-compte {
+    font-size: small;
+}
+/* Paragraphe contenant le lien creer contact du formulaire de connexion */
+#form-connexion p a {
+    
+    color:#702d53;
+}
+/* Media query pour ajouter plus de syle a la responsivité */
+@media only screen and (max-width: 600px){
+    .pub{
+        width: 100%;
+        height: 100%;
+        margin-left: 10px;
+    }
+    .espace{
+        margin-bottom: 10px;
+    }
+    /* Formulaire de connexion */
+    #form-connexion {
+        background-color: #ffffff;
+        border-radius: 10px;
+        font-size: small;
+    }
+    /* Champs du formulaire de connexion */
+    #form-connexion input {
+        color: #702d53;
+        font-size: x-small;
+        border-radius: 30px;
+        border: 2px solid #702d53;
+    }
+    /* bouton du formulaire de connexion */
+    #form-connexion button {
+        font-size: x-small;
+        border-radius: 30px;
+    }
+    /* Paragraphe contenant le lien creer contact du formulaire de connexion */
+    #form-connexion p a {
+        font-size: x-small;
+        color:#702d53;
+    }
+    /* bouton du formulaire de connexion au survol*/
+    #form-connexion button:hover {
+        border: 2px solid #702d53;
+        background-color: #702d53;
+        color: #ffffff;
+        opacity: 90%;
+    }
+    /* Checkbox pour choisir le type de compte */
+    #checkbox-compte {
+        font-size: x-small;
+    }
+}
