@@ -43,4 +43,42 @@ blocEnTete.innerHTML = `
 <link rel="stylesheet" href="css/app-light.css" id="lightTheme" id="feuille-destyle-principale">
 <link rel="stylesheet" href="Mes-styles/style-suplementaire.css" id="feuille-destyle-secondaire">
 <!-- <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled> -->
-</head>`
+</head>`;
+// ---------------------------------------------------------------------------------------------
+// Les fonctions que je vais utiliser
+// Je commence par créer une fonction qui verifiera si le champ cible n`est pas vide
+function champVide (cible) {
+    let champCible = document.getElementById (cible);
+    // Je verifie si la valeur du champ cible est vide, si oui alors:
+    if (champCible.value === undefined || champCible.value === "") {
+        // Je change la couleur de la bordure en rouge
+        champCible.style.border = "2px solid red";
+        // Je donne au texte de ce champ la couleur rouge
+        champCible.style.color = "red";
+        // Je change le texte a l`interieur de ce champ
+        champCible.placeholder = "Ce champs est obligatoire";
+        // Et enfin je retourne la valeur false
+        return false
+    }  else {
+        // Si la valeur du champ cible n`est pas vide alors je retourne true
+        return true;
+    }    
+}
+// ---------------------------------------------------------------------------------------------
+// Je me mets a l`écoute des évenement submit pour controler les formulaires de mon site
+document.addEventListener ("submit", function (event) {
+    event.preventDefault ();
+    // Je recupere la cible de l`évenement
+    let element = event.target;
+    // Je recupere l`id de la cible
+    let idElement = element.id;
+    // Je verifie si il s`agit du formulaire de connexion
+    if (idElement === "form-connexion") {
+        // Je recupere les champ soumis
+        let numero = document.getElementById ("numero");
+        let motDePasse = document.getElementById ("mdp");
+        let typeCompte = document.getElementById ()
+
+    }
+    
+})
