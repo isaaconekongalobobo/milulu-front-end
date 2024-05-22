@@ -48,15 +48,14 @@ blocEnTete.innerHTML = `
 // Les fonctions que je vais utiliser
 // Je commence par créer une fonction qui verifiera si le champ cible n`est pas vide
 function champVide (cible) {
-    let champCible = document.getElementById (cible);
     // Je verifie si la valeur du champ cible est vide, si oui alors:
-    if (champCible.value === undefined || champCible.value === "") {
+    if (cible.value === undefined || cible.value === "") {
         // Je change la couleur de la bordure en rouge
-        champCible.style.border = "2px solid red";
+        cible.style.border = "2px solid red";
         // Je donne au texte de ce champ la couleur rouge
-        champCible.style.color = "red";
+        cible.style.color = "red";
         // Je change le texte a l`interieur de ce champ
-        champCible.placeholder = "Ce champs est obligatoire";
+        cible.placeholder = "Ce champs est obligatoire";
         // Et enfin je retourne la valeur false
         return false
     }  else {
@@ -77,7 +76,11 @@ document.addEventListener ("submit", function (event) {
         // Je recupere les champ soumis
         let numero = document.getElementById ("numero");
         let motDePasse = document.getElementById ("mdp");
-        let typeCompte = document.getElementById ()
+        let typeCompte = document.getElementById ("checkbox-compte")
+        // Je verifie chaque entrée du formulaire
+        if (champVide(numero) === true ) {
+            console.log (numero.value);
+        }
 
     }
     
