@@ -510,18 +510,22 @@ const contenuPageAcceuil = `
 <div id="block-scripts"></div>`
 
 
-// Je recupere les differents div que j`aurrai a utiliser tout au long du code
+// Je recupere les differents noeud que j`aurrai a manipuler tout au long du code
+// Je recupere d’abord le noeud principale qui est la balise <html>
+const html = document.documentElement
+// Je recupere le differents enfant de ce noeud en destructurant le tableau ci-dessus, ce qui
+// me retournera logiquement la balise <head> et <body>
+const [head, body ] = html.children
+// Je recurepere la div principale de la page, a partir duquel je pourrais acceder a tout les 
+// enfants que je voudrais manipuler avec le js
+const blocMere = body.firstElementChild
+// Je récupere également la div qui contient les liens vers tout les scripts auquel les pages zeb du site dépendent
+const blocScripts = body.lastElementChild
+// Maintenat, je vais recuperer la bare de navigation, le side-Bar ainsi que l’elément main qui
+// sera principalement la cible des modifications afin de changer aisement de page.
+const [nav, sidebar, main ] = blocMere.firstElementChild.children
+console.log (blocScripts.children)
 
-// Bloc mere ou bloc principale qui contiendra toute les composant dynamique
-const blocMere = document.getElementById ("bloc-mere")
-// Je recupere la div pour l`en tete de chaque page
-const blocEnTete = document.getElementById ("block-entete")
-// // Je recupere la div pour le sidebar 
-// const blocSideBar = document.getElementById ("block-sidebar")
-// // Je recupere le bloc de navigation
-// const blocNavigation = document.getElementById ("block-navigation");
-// Je recupere la div pour les appels aux scripts js
-const blocScripts = document.getElementById ("block-scripts")
 
 
 
@@ -535,7 +539,7 @@ const blocScripts = document.getElementById ("block-scripts")
 
 // -------------------------------------------------------------------------
 // Je donne un nouveau contenu a cette div
-blocEnTete.innerHTML = contenueBlocEnTete;
+head.innerHTML = contenueBlocEnTete;
 // ---------------------------------------------------------------------------------------------
 // Les fonctions que je vais utiliser
 // Je commence par créer une fonction qui verifiera si le champ cible n`est pas vide
