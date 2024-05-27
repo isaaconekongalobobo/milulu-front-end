@@ -51,7 +51,8 @@ const contenueBlocNavigation = `        <button type="button" class="navbar-togg
 </li>
 </ul>`;
 // Side Bar
-const contenueBlocSideBar = `<a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
+const contenueBlocSideBar = `
+<a href="#" class="btn collapseSidebar toggle-btn d-lg-none text-muted ml-2 mt-3" data-toggle="toggle">
 <i class="fe fe-x"><span class="sr-only"></span></i>
 </a>
 <nav class="vertnav navbar navbar-light">
@@ -720,7 +721,10 @@ const contenuPageAcceuil = `
                       <img src="affiche milulu.jpg" class="img-pub">
                     </div>
                     <div class="bloc-action-pub">
-                      <i class="fe fe-more-vertical"></i>
+                      <i class="fe fe-heart"></i>
+                      <i class="fe fe-message-square "></i>
+                      <i class="fe fe-share-2 "></i>
+                      <i class="fe fe-toggle-left"></i>
                     </div>
                   </div>
 
@@ -1052,13 +1056,13 @@ document.addEventListener ("submit", function (event) {
           // Je change le contenue de la bare de navigation
           nav.innerHTML = contenueBlocNavigation
           // Je change le contenue du side Bar
-          sidebar.innerHTML = ""
+          // sidebar.innerHTML
           // Je change le contenu du bloc principale main correspondant a la page d’acceuil
           main.innerHTML = contenuPageAcceuil
           // Et je change également le contenu du bloc des scripts
           blocScripts.innerHTML =  contenuBlocScripts
         } 
-
+        
     }
     
 })

@@ -144,15 +144,44 @@ body{
 }
 .bloc-contenu-publication p {
     position: relative;
-    margin-top: 50px;
+    margin-top: 80px;
+    text-align: left;
+    width: 660px;
+    margin-left: 20px;
 }
 
 /* Image de publication */
 .bloc-contenu-publication img {
     position: relative;
     margin-top: 20px;
-    width: 200px;
+    width: 250px;
     height: 200px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+/* Image de publication au survol*/
+.bloc-contenu-publication img:hover {
+    width: 252px;
+    height: 202px;
+}
+/* Bloc pour les actions sur la publication */
+.bloc-action-pub {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    margin-left: 500px;
+}
+/* Les icones des actions  */
+.bloc-action-pub i {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #702d53;
+}
+/* Icones des actions au click  */
+.bloc-action-pub i:hover {
+    color: #ffffff;
+    background-color: rgb(243, 40, 40);
+    border-radius: 5px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------- */
