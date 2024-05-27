@@ -4,13 +4,12 @@
 
 // En tete 
 const blocEnTete = `
-<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Milulu est une plateforme en ligne conçue pour la gestion des vos évenements ou pour mettre en services vos compétences dans ce dommaine. ">
+<meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>Milulu RD congo</title>
+<title>Tiny Dashboard - A Bootstrap Dashboard Template</title>
 <!-- Simple bar CSS -->
 <link rel="stylesheet" href="css/simplebar.css">
 <!-- Fonts CSS -->
@@ -27,9 +26,7 @@ const blocEnTete = `
 <link rel="stylesheet" href="css/daterangepicker.css">
 <!-- Style principale-->
 <link rel="stylesheet" href="css/app-light.css" id="lightTheme" id="feuille-destyle-principale">
-<link rel="stylesheet" href="Mes-styles/style-suplementaire.css" id="feuille-destyle-secondaire">
-<!-- <link rel="stylesheet" href="css/app-dark.css" id="darkTheme" disabled> -->
-</head>`;
+<link rel="stylesheet" href="Mes-styles/style-suplementaire.css" id="feuille-destyle-secondaire">`;
 // Side Bar
 const blocSideBar = `
 <aside class="sidebar-left border-right bg-white shadow" id="leftSidebar" data-simplebar>

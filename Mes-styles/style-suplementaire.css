@@ -58,6 +58,27 @@ body{
     
     color:#702d53;
 }
+/* Classe pour les boutons arrondie */
+.btn-arrondi {
+    border: 2px solid #ffffff;
+    background-color: #702d53;
+    color: #ffffff;
+    opacity: 90%;
+    border-radius :30px;
+    font-size: medium;
+    text-align: center;        
+}
+/* Classe pour les boutons arrondie au survol*/
+.btn-arrondi:hover {
+    font-size: medium;
+    background-color: #ffffff;
+    border: 2px solid #702d53;
+    color: #702d53;
+    opacity: 90%;
+    border-radius :30px;
+    font-size: medium;
+    text-align: center;  
+}
 /* Media query pour ajouter plus de syle a la responsivité */
 @media only screen and (max-width: 600px){
     .pub{
@@ -101,5 +122,33 @@ body{
     /* Checkbox pour choisir le type de compte */
     #checkbox-compte {
         font-size: x-small;
+    }
+    /* Classe pour les boutons arrondie */
+    .btn-arrondi {
+        border: 2px solid #ffffff;
+        background-color: #702d53;
+        color: #ffffff;
+        opacity: 90%;
+        border-radius :30px;
+        height: 50px;
+        font-size: x-small;
+        text-align: center;        
+    }
+    /* Classe pour les boutons arrondie au survol*/
+    .btn-arrondi:hover {
+        font-size: medium;
+        background-color: #ffffff;
+        border: 2px solid #702d53;
+        color: #702d53;
+        opacity: 90%;
+        border-radius :30px;
+        height: 50px;
+        font-size: x-small;
+        text-align: center;  
+    }
+    /* Bloc pour le choix du type de compte par l’utilisateur */
+    #bloc-choix-typecompte {
+        position: relative;
+        margin-right: 20px;
     }
 }
