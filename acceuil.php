@@ -95,7 +95,7 @@ if (empty($_SESSION['autoriser']) and !isset($_SESSION['autoriser'])) {
                       <div class="col-12 col-lg-4 text-left pl-4">
                         <p class="mb-1 small text-muted"> Type de compte</p>
                         <span class="h3">Une soirée de gala...</span>
-                        <p class="text-muted mt-2"> Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui </p>
+                        <p class="text-muted mt-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nesciunt. Voluptas, accusantium tenetur! Iste suscipit laudantium quas maxime cumque facere dignissimos nulla. Fugiat cupiditate nemo, distinctio tenetur in eveniet totam?</p>
                       </div>
                     </div>
                     <center>

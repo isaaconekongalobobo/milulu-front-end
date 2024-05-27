@@ -79,6 +79,84 @@ body{
     font-size: medium;
     text-align: center;  
 }
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* Style pour les blocs des publications des utilisateurs et fournisseurs*/
+.publication {
+    background-color: red;
+    width: 700px;
+    height: 400px;
+    border-radius: 49px;
+    background: #f6f5f4;
+    box-shadow:  4px 4px 6px #272727;
+    padding: 10px;
+    text-align: center;
+}
+/* Div qui vas contenir les informations sur la publication */
+.bloc-infos-publication {
+    display: flex;
+    gap: 1Opx;
+}
+/* Photo de l’auteur de l publication */
+.bloc-infos-publication img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 174px;
+    background: #f6f5f4;
+    box-shadow:  2px 2px 12px #a2a2a1,
+             -2px -2px 8px #a2a2a1;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/* Photo de l’auteur de l publication */
+.bloc-infos-publication img:hover {
+    border: 2px solid #702d53;
+}
+/* Nom de l’auteur */
+.bloc-infos-publication h6 {
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 90px;
+    text-align: left;
+    font-size: 15px;
+    color: #702d53;
+}
+/* Nom de l’auteur au survol*/
+.bloc-infos-publication h6:hover {
+    font-size: 16px;
+}
+/* Icone pour les options */
+.bloc-infos-publication i {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 640px;
+    color: #702d53;
+    font-size: medium;
+}
+/* Icone pour les options au survol */
+.bloc-infos-publication i:hover {
+    border: 2px solid #702d53;
+    border-radius: 5px;
+}
+/* Bloc pour le contenu de la publication */
+.bloc-contenu-publication {
+    position: relative;
+}
+.bloc-contenu-publication p {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* Image de publication */
+.bloc-contenu-publication img {
+    position: relative;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+
 /* Media query pour ajouter plus de syle a la responsivité */
 @media only screen and (max-width: 600px){
     .pub{

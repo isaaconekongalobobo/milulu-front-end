@@ -6,7 +6,7 @@ const contenueBlocEnTete = `
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>Tiny Dashboard - A Bootstrap Dashboard Template</title>
+<title>Milulu RDC</title>
 <!-- Simple bar CSS -->
 <link rel="stylesheet" href="css/simplebar.css">
 <!-- Fonts CSS -->
@@ -697,24 +697,33 @@ const contenuPageAcceuil = `
                     <p>Info user</p>
                     </div>
                 </div>
-                <div class="mb-2 align-items-center" style="color:#702d53;">
-                    <div class="card shadow mb-4">
-                    <div class="card-body">
-                        <div class="row mt-1 align-items-center">
-                        <div class="col-12 col-lg-4 text-left pl-4">
-                            <p class="mb-1 small text-muted"> Type de compte</p>
-                            <span class="h3">Une soirée de gala...</span>
-                            <p class="text-muted mt-2"> Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui </p>
-                        </div>
-                        </div>
-                        <center>
-                        <div class="chartbox mr-4">
-                            <img src="affiche milulu.jpg" class="pub" width="500" height="450">
-                        </div>
-                        </center>
-                        
-                    </div> <!-- .card-body -->
-                    </div> <!-- .card -->
+                <!-- Bloc pour les publications -->
+                <div class="publication">
+                  <!-- Bloc pour l’affichage des information sur l’auteur de la publication -->
+                  <div class="bloc-infos-publication">
+                    <div class="bloc-profil-auteur">
+                      <img src="affiche milulu.jpg" class="img-auteur-pub">
+                    </div>
+                    <div class="bloc-nom-auteur">
+                      <h6 class="">Jhon Doe </h6>
+                    </div>
+                    <div class="bloc-option-pub">
+                      <i class="fe fe-more-vertical"></i>
+                    </div>
+                  </div>
+                  <!-- Bloc pour l’affichage du contenu de la publication-->
+                  <div class="bloc-contenu-publication">
+                    <div class="bloc-contenu-txt">
+                      <p class="txt-pub"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, nesciunt. Voluptas, accusantium tenetur! Iste suscipit laudantium quas maxime cumque facere dignissimos nulla. Fugiat cupiditate nemo, distinctio tenetur in eveniet totam?</p>
+                    </div>
+                    <div class="bloc-contenu-img">
+                      <img src="affiche milulu.jpg" class="img-pub">
+                    </div>
+                    <div class="bloc-action-pub">
+                      <i class="fe fe-more-vertical"></i>
+                    </div>
+                  </div>
+
                 </div>
             </div> <!-- .col-12 -->
         </div> <!-- .row -->
