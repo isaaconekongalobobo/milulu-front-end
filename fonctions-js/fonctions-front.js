@@ -690,14 +690,6 @@ const contenuPageAcceuil = `
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="row align-items-center mb-2">
-                    <div class="col">
-                    <h2 class="texte" >Hey! Quoi d'neuf ?...</h2>
-                    </div>
-                    <div class="col-auto">
-                    <p>Info user</p>
-                    </div>
-                </div>
                 <!-- Bloc pour les publications -->
                 <div class="publication">
                   <!-- Bloc pour l’affichage des information sur l’auteur de la publication -->
