@@ -49,6 +49,50 @@ body{
     color: #ffffff;
     opacity: 90%;
 }
+/* --------------------------------------------------------------------------------------------------------- */
+/* Style pour les formulaires  */
+/* Style pour tout les champs de formulaire de l’application */
+.formulaires input {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    opacity: 90%;
+    border-radius :30px;
+    font-size: medium;
+}
+/* Labels du formulaire */
+.formulaires label {
+    color: #ffffff;
+    opacity: 80%;
+}
+/* Bouton du formulaire */
+.formulaires button {
+    border: 2px solid #ffffff;
+    background-color: #702d53;
+    color: #ffffff;
+    opacity: 90%;
+    border-radius :30px;
+    font-size: medium;
+    text-align: center;   
+}
+/* Bouton du formulaire au survol*/
+.formulaires button:hover {
+    font-size: medium;
+    background-color: #ffffff;
+    border: 2px solid #702d53;
+    color: #702d53;
+    opacity: 90%;
+    border-radius :30px;
+    font-size: medium;
+    text-align: center;   
+}
+/* Lien connexion au survol*/
+.formulaires a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    opacity: 70%;
+}
+/* ------------------------------------------------------------------------------------------------------------------------ */
 /* Checkbox pour choisir le type de compte */
 #checkbox-compte {
     font-size: small;

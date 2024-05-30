@@ -729,7 +729,7 @@ const contenuPageAcceuil = `
 // Suite des formulaire pour l’enregistrement d’un compte utilisateur
 const formCompteUser1 = `
 <div class="row align-items-center h-100">
-        <form class="col-lg-6 col-md-8 col-10 mx-auto" method="" action="" id="form-user1">
+        <form class="formulaires col-lg-6 col-md-8 col-10 mx-auto" id="form-user1">
           <div class="mx-auto text-center my-4">
             <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
               <!-- Logo au dessu du formulaire -->
@@ -793,7 +793,7 @@ const formCompteUser1 = `
 
 const formCompteUser2 = `
 <div class="row align-items-center h-100">
-        <form class="col-lg-6 col-md-8 col-10 mx-auto" method="" action="" enctype="multipart/form-data" id="form-user2">
+        <form class="formulaires col-lg-6 col-md-8 col-10 mx-auto" method="" action="" enctype="multipart/form-data" id="form-user2">
           <div class="mx-auto text-center my-4">
             <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
               <!-- Logo au dessu du formulaire -->
@@ -845,7 +845,7 @@ const formCompteUser2 = `
 
 const formCompteFournisseur1 = `
 <div class="row align-items-center h-100">
-        <form class="col-lg-6 col-md-8 col-10 mx-auto" method="" action="" id="form-fournisseur1">
+        <form class="formulaires col-lg-6 col-md-8 col-10 mx-auto" method="" action="" id="form-fournisseur1">
           <div class="mx-auto text-center my-4">
             <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
               <!-- Logo au dessu du formulaire -->
@@ -933,7 +933,7 @@ const formCompteFournisseur1 = `
 
 const formCompteFournisseur2 = `
 <div class="row align-items-center h-100">
-        <form class="col-lg-6 col-md-8 col-10 mx-auto" method="" action="" enctype="" id="form-fournisseur2">
+        <form class="formulaires col-lg-6 col-md-8 col-10 mx-auto" method="" action="" enctype="" id="form-fournisseur2">
           <div class="mx-auto text-center my-4">
             <a class="navbar-brand mx-auto mt-2 flex-fill text-center" href="./index.html">
               <!-- Logo au dessu du formulaire -->
@@ -1084,12 +1084,20 @@ document.addEventListener('click', function (event){
           // S’il s’agit du lien pour le compte utilisateur:
           // Je change le contenue du bloc mere par celui du formulaire pour l’enregistrement d’un compte utilisateur
           if (blocMere.innerHTML = formCompteUser1) {
-            // Je met a l’écoute de l’évenement de soumission du formulaire
-            document.addEventListener ("submit", function (e) {
+            // Je met a l’écoute de l’évenement click du bouton du formulaire
+            document.addEventListener ("click", function (e) {
               let formCible = e.target
               // Si l’utilisateur soumets le premier formulaire d’inscription
-              if (formCible.id = "form-user1") {
-                blocMere.innerHTML = "Vous avez soumis le formulaire d’inscription";
+              if (formCible.id = "btn-form-user1") {
+                // Je traite les entrées du formulaires
+                // Je récupere d’abord tout les champs du formulaire
+                let tbChamps = document.getElementsByTagName ("input");
+                // Je recuepre chaque valeur en destructurant le tableau ci dessus
+                let [nom, prenom, age, numero, email, mdp1, mdp2] = tbChamps;
+                // Je verifie que les champs recuperé ne sont pas vide
+                if (champVide(nom) === true && champVide(prenom) === true && champVide(age) === true && champVide(numero) === true && champVide(email) === true && champVide(mdp1) === true && champVide(mdp2) === true ) {
+                  console.log ("Les champs sont remplis");
+                }
               }
             })
           }
