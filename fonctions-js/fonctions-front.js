@@ -1,3 +1,6 @@
+// Je crée un tableau pour stocker les informations primaire sur l’inscription de l’utilisateur
+let tbInfosUserPrimaire = [];
+
 // Je crée des constantes pour stocker les different contenue html que j’aurais a generer avec le js
 // En tete 
 const contenueBlocEnTete = `
@@ -1024,8 +1027,14 @@ function champVide (cible) {
         // Et enfin je retourne la valeur false
         return false
     }  else {
+        // Je change la couleur de la bordure en vert
+        cible.style.border = "4px solid green";
+        // Je donne au texte de ce champ la couleur rouge
+        cible.style.color = "#702d53";
+        cible.style.backgroundColor = "#ffffff";
         // Si la valeur du champ cible n`est pas vide alors je retourne true
         return true;
+
     }    
 }
 // ---------------------------------------------------------------------------------------------
@@ -1096,7 +1105,14 @@ document.addEventListener('click', function (event){
                 let [nom, prenom, age, numero, email, mdp1, mdp2] = tbChamps;
                 // Je verifie que les champs recuperé ne sont pas vide
                 if (champVide(nom) === true && champVide(prenom) === true && champVide(age) === true && champVide(numero) === true && champVide(email) === true && champVide(mdp1) === true && champVide(mdp2) === true ) {
-                  console.log ("Les champs sont remplis");
+                  // je stocke toutes ses valeurs dans un tableau primaire
+                  for (let i = 0; i < tbChamps.length; i++) {
+                    tbInfosUserPrimaire.push (tbChamps[i].value);
+                  }
+                  // Je change le contenu de la page par le deuxieme formulaire d’inscription de l’utilisateur
+                  if (blocMere.innerHTML = formCompteFournisseur2) {
+                    console.log ("Le deuxieme formulaire d’inscription de l’utilisateur");
+                  }
                 }
               }
             })
